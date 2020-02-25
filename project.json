@@ -1,0 +1,10 @@
+{
+	"name": "Harakter HTML template",
+	"ver": "0.1",
+	"author": "E. Sukhodolskiy <e.sukhodoslkiy@outlook.com>",
+	"release_url": "https://eugene-sukhodolskiy.github.io/harakter-html/",
+	"git_url": "https://github.com/eugene-sukhodolskiy/harakter-html",
+	"tags": ["harakter", "html", "order"],
+	"Status": "open",
+	"Type": "web"
+}
