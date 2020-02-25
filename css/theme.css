@@ -4,6 +4,8 @@
 	--body-bg: #1C1D1F;
 	--txt-color: #fff;
 	--font-family: 'Open Sans';
+	--txt-alt-color-main: #64FB00;
+	--global-sprite: url('/imgs/css_sprites.png');
 }
 
 body{
