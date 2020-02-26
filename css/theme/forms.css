@@ -1,0 +1,76 @@
+.form-container{
+	margin-top: 8px;
+	padding: 0;
+	width: 100%;
+	height: 40px;
+	width: 325px;
+}
+
+.form-container .input{
+	box-sizing: border-box;
+	width: 100%;
+	display: block;
+	width: inherit;
+	height: 40px;
+	font-size: 12px;
+	color: var(--input-color);
+	border: 1px solid var(--input-color);
+	background-color: transparent;
+	padding: 0 11px;
+	line-height: 40px;
+	position: relative;
+	top: -40px;
+	margin-top: 0;
+	z-index: 2;
+}
+
+.form-container .label{
+	box-sizing: border-box;
+	font-size: 12px;
+	color: var(--label-color);
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 0;
+	position: relative;
+	top: 0;
+	z-index: 1;
+	padding-left: 11px;
+	transition-duration: .2s;
+	transition-property: line-height, font-size;
+}
+
+.form-container textarea.input{
+	resize: none;
+	overflow: auto;
+	line-height: 24px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	height: 80px;
+}
+
+.form-container.textarea{
+	height: 80px;
+}
+
+.form-container.focus .label{
+	font-size: 8px;
+	line-height: 12px;
+}
+
+.form-container.inverted .input{
+	border-color: var(--input-color-inverted);
+	color: var(--input-color-inverted);
+}
+
+.form-container.inverted .label{
+	color: var(--label-color);
+}
+
+.form-container .input::placeholder{
+	font-size: 0;
+}
+
+.form-container .input:focus{
+	outline: none;
+}

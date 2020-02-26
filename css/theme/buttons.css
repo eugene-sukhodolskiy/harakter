@@ -1,0 +1,112 @@
+.button{
+	width: 325px;
+	background-color: transparent;
+	color: var(--txt-color);
+	height: 50px;
+	line-height: 50px;
+	border: 1px solid var(--txt-color);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	transition-duration: .2s;
+	transition-property: color, border-color, background-color;
+}
+
+.button.medium{
+	width: 290px;
+}
+
+.button.small{
+	width: 210px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.button.chevron{
+	background-image: var(--global-sprite);
+	background-repeat: no-repeat;
+  background-position: 225px -31px;
+  text-align: left;
+  padding-right: 85px;
+  padding-left: 20px;
+}
+
+.button.chevron.medium{
+	background-position: 200px -31px;
+	padding-right: 65px;
+}
+
+.button.chevron.small{
+	background-position: 126px -37px;
+	padding-right: 45px;
+}
+
+.button.main{
+	color: var(--btn-color-main);
+	background-color: var(--btn-bg-main);
+}
+
+.button.chevron.main{
+	background-image: var(--global-sprite);
+	background-repeat: no-repeat;
+  background-position: 225px -366px;
+  text-align: left;
+  padding-right: 85px;
+  padding-left: 20px;
+}
+
+.button.chevron.medium.main{
+	background-position: 200px -366px;
+	padding-right: 65px;
+}
+
+.button.chevron.small.main{
+	background-position: 126px -373px;
+	padding-right: 45px;
+}
+
+.button:hover{
+	border-color: var(--btn-color-main-hover);
+	color: var(--btn-color-main-hover);
+}
+
+.button.main:hover{
+	border-color: var(--btn-bg-main);
+}
+
+.button:focus{
+	outline: none;
+}
+
+.button.main:hover,
+.button.medium.main:hover,
+.button.chevron:hover{
+	color: var(--btn-color-main-hover);
+	background-position-y: -254px;
+}
+
+.button.chevron.small.main:hover,
+.button.chevron.small:hover{
+	background-position-y: -261px;
+}
+
+.button.chevron:focus,
+.button:focus{
+	background-position-y: -366px;
+	background-color: var(--btn-color-main-hover);
+	color: var(--btn-color-main);
+	border-color: var(--btn-color-main-hover);
+}
+
+.button.main:focus,
+.button.medium.main:focus{
+	background-color: var(--btn-color-main-hover);
+	background-position-y: -366px;
+	color: var(--btn-color-main);
+	border-color: var(--btn-color-main);
+}
+
+.button.chevron.small.main:focus,
+.button.chevron.small:focus{
+	background-position-y: -373px;
+}

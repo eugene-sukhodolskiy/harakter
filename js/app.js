@@ -1,6 +1,11 @@
 $(document).ready(function(){
 	console.log("App Ready");
 	
+	searchHandlers();
+	formHandlers();
+});
+
+function searchHandlers(){
 	$('.search-bar .go-search').on('blur', function(){
 		$(this).removeClass('active');
 		$(this).val('');
@@ -18,4 +23,16 @@ $(document).ready(function(){
 			$('.search-bar .clear-search-field.show').removeClass('show');
 		}
 	});
-});
+}
+
+function formHandlers(){
+	$('.form-container .input').on('focus', function(){
+		$(this).parent().addClass('focus');
+	}).on('blur', function(){
+		if($(this).val().length){
+			return false;
+		}
+
+		$(this).parent().removeClass('focus');
+	});
+}
