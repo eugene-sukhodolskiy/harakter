@@ -12,4 +12,5 @@ body{
 	background: var(--body-bg);
 	color: var(--txt-color);
 	font-family: var(--font-family);
+	overflow-x: hidden;
 }

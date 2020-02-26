@@ -1,16 +1,76 @@
 .search-bar{
-
+	text-align: center;
+	white-space: nowrap;
+	font-size: 0px;
+	line-height: 0;
 }
 
 .search-bar .go-search{
 	border: 0;
 	background-color: transparent;
-	display: block;
+	display: inline-block;
 	margin-top: 30px;
-	width: 40px;
+	width: 50px;
 	height: 40px;
 	background-image: var(--global-sprite);
 	background-repeat: no-repeat;
-  background-position: -38px -714px;
-  float: right;
+	background-position: -39px -716px;
+	padding-left: 40px;
+	position: relative;
+	margin-left: 15px;
+	font-size: 16px;
+	color: #fff;
+	left: -30px;
+	padding-right: 100px;
+	box-sizing: border-box;
+	transition-duration: .3s;
+	transition-property: padding-left, background-color, border, width, left, background-position;
+}
+
+.search-bar .go-search::placeholder{
+	font-size: 12px;
+	line-height: 40px;
+	color: transparent;
+}
+
+.search-bar .go-search:focus,
+.search-bar .go-search.active{
+	background-color: #3C3C3C;
+	border: 1px solid #fff;
+	width: 500px;
+	left: -480px;
+	padding-left: 10px;
+	background-position: 410px -716px;
+}
+
+.search-bar .go-search:focus{
+	outline: none;
+}
+
+.search-bar .go-search:focus::placeholder,
+.search-bar .go-search.active::placeholder{
+	color: #929294;
+}
+
+.search-bar .clear-search-field{
+	position: relative;
+	background-image: var(--global-sprite);
+	background-repeat: no-repeat;
+	background-position: -39px -486px;
+	width: 40px;
+	height: 40px;
+	top: 15px;
+	left: -5px;
+	z-index: 1;
+	cursor: pointer;
+	visibility: hidden;
+	display: inline-block;
+	transition-duration: .2s;
+	transition-property: opacity;
+	opacity: 0;
+}
+
+.search-bar .clear-search-field.show{
+	visibility: visible;
+	opacity: 1;
 }

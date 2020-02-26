@@ -1,0 +1,38 @@
+.social-bar{
+	position: fixed;
+	width: 40px;
+	right: 0px;
+	border: 1px solid grey;
+	height: 160px;
+	top: 50%;
+	margin-top: -80px;
+}
+
+.social-bar ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+.social-bar-item{
+
+}
+
+.social-bar-link{
+
+}
+
+.soc-instagram{
+
+}
+
+.soc-youtube{
+
+}
+
+.soc-facebook{
+
+}
+
+.soc-telegram{
+
+}
