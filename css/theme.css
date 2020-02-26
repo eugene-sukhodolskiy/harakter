@@ -12,6 +12,7 @@
 	--input-color: #fff;
 	--input-color-inverted: #1C1D1F;
 	--label-color: #929294;
+	--social-sprite: url('../imgs/social-sprite.png');
 }
 
 body{
@@ -32,7 +33,7 @@ body{
 .heading{
 	font-weight: 900;
 	color: var(--txt-color);
-	font-family: Rubik;
+	/*font-family: Rubik;*/
 }
 
 h1.heading{
@@ -287,4 +288,52 @@ h4.heading{
 	width: 100%;
 	max-width: 1175px;
 	margin: auto;
+}
+
+.partner-single .section-heading{
+	text-align: left;
+	text-transform: none;
+}
+
+.partner-single .section-content{
+	margin-top: 35px;
+}
+
+.partner-single .partner-logo{
+	width: 160px;
+	max-height: 160px;
+	height: auto;
+}
+
+.about-partner{
+	font-size: 16px;
+	line-height: 22px;
+	margin-top: 20px;
+}
+
+.partner-link{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-image: var(--social-sprite);
+	background-repeat: no-repeat;
+	background-position: -45px -42px;
+	margin-right: 10px;
+	margin-top: 35px;
+}
+
+.partner-link.facebook{
+	background-position: -40px -159px;
+}
+
+.partner-link.instagram{
+	background-position: -43px -277px;
+}
+
+.partner-link.youtube{
+	background-position: -44px -395px;
+}
+
+.partner-link.telegram{
+	background-position: -45px -42px;
 }

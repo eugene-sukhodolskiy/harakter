@@ -494,3 +494,30 @@
 .partner-card:hover{
 	opacity: 1;
 }
+.back-to-previus{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.back-button{
+	text-decoration: none;
+	color: var(--txt-color);
+	font-size: 12px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 29px;
+	position: relative;
+	z-index: 1;
+	left: -5px;
+	background-image: var(--global-sprite);
+	background-repeat: no-repeat;
+	background-position: -46px -153px;
+	transition-duration: .2s;
+	transition-property: background-position-x;
+}
+
+.back-button:hover{
+	background-position-x: -48px;
+}
