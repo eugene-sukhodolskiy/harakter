@@ -149,7 +149,6 @@
 	position: fixed;
 	width: 40px;
 	right: 0px;
-	border: 1px solid grey;
 	height: 160px;
 	top: 50%;
 	margin-top: -80px;
@@ -158,28 +157,44 @@
 .social-bar ul{
 	list-style-type: none;
 	padding: 0;
+	margin: 0;
 }
 
 .social-bar-item{
-
+	margin: 0;
+	padding: 0;
 }
 
 .social-bar-link{
-
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: var(--global-sprite);
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
 }
 
 .soc-instagram{
-
+	background-position: -40px -1067px;
 }
 
 .soc-youtube{
-
+	background-position: -39px -1187px;
 }
 
 .soc-facebook{
-
+	background-position: -36px -833px;
 }
 
 .soc-telegram{
+	background-position: -40px -952px;
+}
 
+.social-bar:hover .social-bar-item{
+	opacity: .7;
+}
+
+.social-bar .social-bar-item:hover{
+	opacity: 1;
 }
