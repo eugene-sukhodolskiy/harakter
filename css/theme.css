@@ -22,6 +22,13 @@ body{
 	padding-bottom: 140px;
 }
 
+@media (min-width: 1440px){
+	.container{
+		width: 1440px;
+		max-width: 1440px;
+	}
+}
+
 .heading{
 	font-weight: 900;
 	color: var(--txt-color);

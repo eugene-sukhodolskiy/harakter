@@ -44,6 +44,7 @@
 .lang-panel{
 	white-space: nowrap;
 	font-size: 12px;
+	text-align: center;
 }
 
 .lang-panel a{
@@ -67,5 +68,135 @@
 	height: 40px;
 	background-image: var(--global-sprite);
 	background-repeat: no-repeat;
-  background-position: -38px -1910px;
+	background-position: -38px -1910px;
+}
+
+.adaptive-control-btn{
+	display: block;
+	visibility: hidden;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: 0;
+	float: right;
+	margin-top: 30px;
+	background-image: url('../imgs/sandwitch.png');
+	background-repeat: no-repeat;
+	background-position: center right;
+	z-index: 2;
+}
+
+.adaptive-control-btn:focus{
+	outline: none;
+}
+
+.close-nav{
+	background-image: url('../imgs/close.png');
+	display: none;
+}
+
+@media (max-width: 1200px){
+	.nav-item{
+		margin-right: 20px;
+	}
+}
+
+@media (max-width: 992px){
+	.adaptive-control-btn{
+		visibility: visible;
+	}
+
+	.go-webcams{
+		position: absolute;
+    float: none;
+    top: 51px;
+    right: 15px;
+	}
+
+	.navbar{
+		height: 64px;
+		position: relative;
+		overflow: hidden;
+		transition-duration: .2s;
+		transition-property: height;
+	}
+
+	.navbar.active{
+		height: 400px;
+	}
+
+	.nav-list{
+		margin-top: 135px;
+		position: relative;
+		float: none;
+		left: 25px;
+	}
+
+	.nav-item{
+		display: block;
+		width: 100%;
+		text-align: left;
+		line-height: initial;
+		margin-bottom: 16px;
+	}
+
+	.nav-link{
+		font-size: 16px;
+	}
+
+	.navbar .site-logo-container{
+		min-width: 77px;
+		padding-top: 37px;
+	}
+
+	.navbar .logo{
+		width: 100%;
+	}
+
+	.lang-panel{
+		position: absolute;
+		left: -70px;
+		top: 90px;
+		font-size: 16px;
+		line-height: 25px;
+	}
+}
+
+@media (max-width: 768px){
+	.adaptive-control-btn{
+		margin-top: 25px;
+	}
+
+	.navbar .search-bar .go-search{
+		margin-top: 25px;
+	}
+
+	.search-bar{
+		margin-left: 50px;
+	}
+}
+
+@media (max-width: 576px){
+	.adaptive-control-btn{
+		position: absolute;
+		right: 15px;
+		top: 25px;
+		margin-top: 0;
+	}
+
+	.adaptive-control-container{
+		position: static;
+	}
+
+	.lang-panel-container{
+		position: static;
+	}
+
+	.search-bar{
+		margin-left: 0px;
+	}
+
+	.lang-panel{
+		left: 15px;
+	}
 }

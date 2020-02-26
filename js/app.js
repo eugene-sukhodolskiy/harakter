@@ -3,6 +3,7 @@ $(document).ready(function(){
 	
 	searchHandlers();
 	formHandlers();
+	adaptiveMenuHandlers();
 });
 
 function searchHandlers(){
@@ -34,5 +35,25 @@ function formHandlers(){
 		}
 
 		$(this).parent().removeClass('focus');
+	});
+}
+
+function adaptiveMenuHandlers(){
+	$('.sandwitch').on('click', function(){
+		$('.navbar').addClass('active');
+		setTimeout(function(){
+			$('.social-bar').addClass('show');
+		}, 200);
+		$(this).hide();
+		$('.close-nav').show();
+	});
+
+	$('.close-nav').on('click', function(){
+		$(this).hide();
+		$('.sandwitch').show();
+		setTimeout(function(){
+			$('.navbar').removeClass('active');
+		}, 200);
+		$('.social-bar').removeClass('show');
 	});
 }
