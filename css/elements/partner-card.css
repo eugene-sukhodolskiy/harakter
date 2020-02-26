@@ -1,0 +1,30 @@
+.partners .section-content{
+	margin-top: 60px;
+}
+
+.link-partner-single{
+	text-decoration: none;
+	color: var(--txt-color);
+}
+
+.partner-card{
+	text-align: center;
+	margin-top: 80px;
+	opacity: 0.8;
+	transition-duration: .2s;
+	transition-property: opacity;
+}
+
+.partner-logo{
+	width: 160px;
+	height: auto;
+	max-height: 160px;
+}
+
+.partner-name{
+	margin-top: 40px;
+}
+
+.partner-card:hover{
+	opacity: 1;
+}
