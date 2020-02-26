@@ -74,7 +74,14 @@ h4.heading{
 	margin-top: 24px;
 }
 
+.section-footer{
+	width: 100%;
+	text-align: center;
+}
+
 .button{
+	display: inline-block;
+	text-decoration: none;
 	width: 325px;
 	background-color: transparent;
 	color: var(--txt-color);
@@ -263,3 +270,8 @@ h4.heading{
 	outline: none;
 }
 
+.latest-articles .articles{
+	width: 100%;
+	max-width: 1175px;
+	margin: auto;
+}

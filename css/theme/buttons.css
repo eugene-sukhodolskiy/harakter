@@ -1,4 +1,6 @@
 .button{
+	display: inline-block;
+	text-decoration: none;
 	width: 325px;
 	background-color: transparent;
 	color: var(--txt-color);

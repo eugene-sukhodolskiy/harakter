@@ -74,6 +74,16 @@ h4.heading{
 	margin-top: 24px;
 }
 
+.section-footer{
+	width: 100%;
+	text-align: center;
+}
+
 @join:theme/buttons.css;
 @join:theme/forms.css;
 
+.latest-articles .articles{
+	width: 100%;
+	max-width: 1175px;
+	margin: auto;
+}
