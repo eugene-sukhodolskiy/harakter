@@ -67,6 +67,8 @@ function partnersCarousel(){
 		slidesToShow: 6,
 		slidesToScroll: 6,
 		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		responsive: [
 			{
 				breakpoint: 1024,

@@ -1,0 +1,27 @@
+@join:layouts/header.html;
+@join:layouts/navbar.html;
+@join:layouts/social-bar.html;
+<div class="container">
+	<section class="site-section page articles">
+		<h2 class="heading section-heading">ПУБЛИКАЦИИ</h2>
+		<p class="txt-normal section-sub-heading">Социальный проект, цель которого популяризация спорта и здорового образа жизни </p>
+		@join:layouts/tags.html;
+		<div class="section-content">
+			<div class="row">
+				@repeat:16;
+				<div class="col-12 col-md-6 col-lg-4 col-xl-4">
+					<article class="article-card" style="background-image: url('/imgs/article-placeholder.png')">
+						<a href="#" class="article-card-link">
+							<div class="article-card-content">
+								<h4 class="heading article-title">Привет медвед</h4>
+								<p class="article-excerpt">Мы собрали ответы на все самые популярные вопросы, если среди них нет ответа на твой, пиши нам:)</p>
+							</div>
+						</a>
+					</article>
+				</div>
+				@end;
+			</div>
+		</div>
+	</section>
+</div>
+@join:layouts/footer.html;

@@ -1,0 +1,33 @@
+.tags{
+	margin: 40px 0;
+}
+
+.tags ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.tag{
+	display: inline-block;
+}
+
+.tag-link{
+	text-decoration: none;
+	display: inline-block;
+	color: var(--txt-color);
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px;
+	border: 1px solid var(--txt-color);
+	background-color: transparent;
+	transition-duration: .2s;
+	transition-property: background-color, color;
+}
+
+.tag.active .tag-link,
+.tag:hover .tag-link{
+	color: var(--btn-color-main);
+	background-color: var(--txt-color);
+}
