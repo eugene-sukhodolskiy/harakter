@@ -2,6 +2,7 @@
 	display: inline-block;
 	text-decoration: none;
 	width: 325px;
+	max-width: 85vw;
 	background-color: transparent;
 	color: var(--txt-color);
 	height: 50px;

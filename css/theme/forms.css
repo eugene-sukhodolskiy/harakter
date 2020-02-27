@@ -4,6 +4,7 @@
 	width: 100%;
 	height: 40px;
 	width: 325px;
+	max-width: 85vw;
 }
 
 .form-container .input{

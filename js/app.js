@@ -4,6 +4,7 @@ $(document).ready(function(){
 	searchHandlers();
 	formHandlers();
 	adaptiveMenuHandlers();
+	partnersCarousel();
 });
 
 function searchHandlers(){
@@ -55,5 +56,39 @@ function adaptiveMenuHandlers(){
 			$('.navbar').removeClass('active');
 		}, 200);
 		$('.social-bar').removeClass('show');
+	});
+}
+
+function partnersCarousel(){
+	$('.partners-carousel').slick({
+		dots: false,
+		infinite: false,
+		speed: 300,
+		slidesToShow: 6,
+		slidesToScroll: 6,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
 	});
 }
