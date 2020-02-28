@@ -13,6 +13,8 @@
 	--input-color-inverted: #1C1D1F;
 	--label-color: #929294;
 	--social-sprite: url('../imgs/social-sprite.png');
+	--article-social-sprite: url('../imgs/article-social-sprite.png');
+	--share-btn-txt-color: #929294;
 }
 
 body{
@@ -439,4 +441,39 @@ h4.heading{
 
 .teammate .about-teammate{
 	margin-top: 0;
+}
+
+/* ARTICLE SINGLE */
+
+.article-single{
+	margin-top: 0;
+	margin-bottom: 120px;
+}
+
+.article-single .article-title{
+	text-align: left;
+	margin-top: 0;
+}
+
+.article-single .article{}
+
+.article-single .article-thumbnail{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 100%;
+	height: auto;
+}
+
+.article-single .article-content{
+	margin-bottom: 45px;
+	font-size: 16px;
+	line-height: 23px;
+}
+
+.article-single .article-content p{
+	margin: 5px 0;
+}
+
+.related-articles .section-heading{
+	text-align: left;
 }
