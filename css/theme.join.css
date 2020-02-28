@@ -15,6 +15,7 @@
 	--social-sprite: url('../imgs/social-sprite.png');
 	--article-social-sprite: url('../imgs/article-social-sprite.png');
 	--share-btn-txt-color: #929294;
+	--link-color: #64FB00;
 }
 
 body{
@@ -54,6 +55,32 @@ h3.heading{
 h4.heading{
 	font-size: 24px;
 	font-weight: bold;
+}
+
+@media (max-width: 768px){
+	h1.heading{
+		font-size: 40px;
+	}
+
+	h2.heading{
+		font-size: 30px;
+	}
+
+	/*h3.heading{
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	h4.heading{
+		font-size: 18px;
+		font-weight: bold;
+	}*/
+}
+
+.link{
+	text-decoration: underline;
+	color: var(--link-color);
+	font-size: 12px;
 }
 
 .txt-normal{
@@ -286,4 +313,35 @@ h4.heading{
 
 .related-articles .section-heading{
 	text-align: left;
+}
+
+/* COMMING SOON */
+
+.comming-soon{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: calc(100% - 100px);
+	background: url('../imgs/comming-soon-bg.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	z-index: 0;
+}
+
+.comming-soon .content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	padding-top: 200px;
+	z-index: 0;
+}
+
+.comming-soon .heading{
+	line-height: 82px;
+}
+
+.comming-soon .home-link{
+	text-transform: uppercase;
+	font-weight: bold;
 }
