@@ -111,7 +111,7 @@ h4.heading{
 }
 
 .partner-single .section-content{
-	margin-top: 35px;
+	margin-top: 40px;
 }
 
 .partner-single .partner-logo{
@@ -238,4 +238,15 @@ h4.heading{
 
 .team-item > a:hover .thumbnail{
 	filter: grayscale(0%);
+}
+
+.teammate .teammate-photo{
+	width: 100%;
+	height: auto;
+	max-height: initial;
+	margin-bottom: 40px;
+}
+
+.teammate .about-teammate{
+	margin-top: 0;
 }
