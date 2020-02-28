@@ -14,7 +14,7 @@
 	height: 100%;
 }
 
-.home-carousel .carousel-item-footer{
+.carousel-item-footer{
 	position: absolute;
 	text-align: center;
 	top: 100%;
@@ -46,8 +46,28 @@
 	background-position: top center;
 }
 
+.home-carousel-adaptive-tmp{
+	display: none;
+}
+
 @media (max-width: 768px){
 	.carousel-item-banner{
 		display: none;
+	}
+}
+
+@media (max-width: 560px){
+	.home-carousel .carousel-item-footer{
+		display: none;
+	}
+
+	.home-carousel{
+		height: 320px;
+	}
+
+	.home-carousel-adaptive-tmp{
+		display: block;
+		position: static;
+		margin-top: 30px;
 	}
 }
