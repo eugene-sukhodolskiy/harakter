@@ -301,6 +301,7 @@
 	transition-delay: .3s;
 	transition-duration: .3s;
 	transition-property: opacity;
+	z-index: 2;
 }
 
 .search-item{

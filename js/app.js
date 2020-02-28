@@ -5,6 +5,7 @@ $(document).ready(function(){
 	formHandlers();
 	adaptiveMenuHandlers();
 	partnersCarousel();
+	popupControl();
 });
 
 function searchHandlers(){
@@ -56,6 +57,22 @@ function adaptiveMenuHandlers(){
 			$('.navbar').removeClass('active');
 		}, 200);
 		$('.social-bar').removeClass('show');
+	});
+}
+
+function popupControl(){
+	$('[data-popup]').on('click', function(e){
+		e.preventDefault();
+		$('.popup.active').removeClass('active');
+		let popupName = $(this).attr('data-popup');
+		$('.' + popupName).addClass('active');
+		$('.popup-back').addClass('active');
+		return false;
+	});
+
+	$('.popup-back').on('click', function(){
+		$('.popup.active').removeClass('active');
+		$(this).removeClass('active');
 	});
 }
 
