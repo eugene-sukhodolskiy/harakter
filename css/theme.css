@@ -289,7 +289,8 @@ h4.heading{
 .latest-articles .articles{
 	width: 100%;
 	max-width: 1175px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* PARTNER PAGE SINGLE */
@@ -393,5 +394,38 @@ h4.heading{
 	}
 }
 
-/* ARTICLES */
+/* TEAM */
 
+.team-item{
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.team-item > a{
+	text-decoration: none;
+	color: var(--txt-color);
+}
+
+.team-item .thumbnail{
+	height: 280px;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+	transition-duration: .2s;
+}
+
+.team-item .name{
+	margin-top: 16px;
+	margin-bottom: 0;
+}
+
+.team-item .excerpt{
+	font-size: 12px;
+	line-height: 17px;
+}
+
+.team-item > a:hover .thumbnail{
+	filter: grayscale(0%);
+}
