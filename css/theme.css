@@ -5,7 +5,7 @@
 	--txt-color: #fff;
 	--font-family: 'Open Sans';
 	--txt-alt-color-main: #64FB00;
-	--global-sprite: url('/imgs/css_sprites.png');
+	--global-sprite: url('../imgs/css_sprites.png');
 	--btn-color-main: #1C1D1F;
 	--btn-bg-main: #fff;
 	--btn-color-main-hover: #64FB00;
@@ -499,6 +499,10 @@ h4.heading{
 	margin-bottom: 45px;
 	font-size: 16px;
 	line-height: 23px;
+}
+
+.article-single .article-content img{
+	max-width: 100%;
 }
 
 .article-single .article-content p{

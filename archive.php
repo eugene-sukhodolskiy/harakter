@@ -1,0 +1,1 @@
+<? include TH_DIR . '/page-articles.php' ?>

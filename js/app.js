@@ -6,6 +6,8 @@ $(document).ready(function(){
 	adaptiveMenuHandlers();
 	partnersCarousel();
 	popupControl();
+	signupControl();
+	loginControl();
 });
 
 function searchHandlers(){
@@ -73,6 +75,45 @@ function popupControl(){
 	$('.popup-back').on('click', function(){
 		$('.popup.active').removeClass('active');
 		$(this).removeClass('active');
+	});
+}
+
+function signupControl(){
+	$('.signup form').on('submit', function(e){
+		e.preventDefault();
+		let data = {
+			"action": 'th_signup',
+			"email": $('.signup [name="email"]').val(),
+			"password": $('.signup [name="password"]').val(),
+			"password_repeat": $('.signup [name="password_repeat"]').val(),
+		};
+
+		$.post('/wp-admin/admin-ajax.php', data, function(resp){
+			resp = JSON.parse(resp.split('}')[0]+'}');
+			console.log(resp);
+			if(resp.signup && resp.signup != 0){
+				$('[data-popup="login"]').trigger('click');
+			}
+		});
+	});
+}
+
+function loginControl(){
+	$('.login form').on('submit', function(e){
+		e.preventDefault();
+		let data = {
+			"action": 'th_login',
+			"email": $('.signup [name="email"]').val(),
+			"password": $('.signup [name="password"]').val(),
+		};
+
+		$.post('/wp-admin/admin-ajax.php', data, function(resp){
+			console.log(resp);
+			resp = JSON.parse(resp.split('}')[0]+'}');
+			if(typeof resp.user != 'undefined'){
+				$('.popup-back').trigger('click');
+			}
+		});
 	});
 }
 
