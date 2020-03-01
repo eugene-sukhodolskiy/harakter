@@ -56,15 +56,15 @@
 @media (max-width: 992px){
 	.social-bar{
 		position: absolute;
-    width: 100%;
-    text-align: center;
-    height: 40px;
-    top: 330px;
-    margin-top: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition-duration: .2s;
-    transition-property: opacity;
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		top: 330px;
+		margin-top: 0;
+		visibility: hidden;
+		opacity: 0;
+		transition-duration: .2s;
+		transition-property: opacity;
 	}
 
 	.social-bar.show{
@@ -75,4 +75,32 @@
 	.social-bar-item{
 		display: inline-block;
 	}
+
+	.static-social-bar .social-bar{
+		position: static;
+		width: 100%;
+		text-align: center;
+		height: 40px;
+		margin-top: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.static-social-bar .social-bar-item{
+		display: inline-block;
+	}
+}
+
+.static-social-bar .social-bar{
+	position: static;
+	width: 100%;
+	text-align: center;
+	height: 40px;
+	margin-top: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.static-social-bar .social-bar-item{
+	display: inline-block;
 }
