@@ -15,5 +15,6 @@
 	<? include TH_DIR . "html/pages/sections/latest-articles.php" ?>
 	<? include TH_DIR . "html/pages/sections/partners.php" ?>
 	<? include TH_DIR . "html/pages/sections/team.php" ?>
+	<? include TH_DIR . "html/pages/sections/contacts.php" ?>
 </div>
 <? include TH_DIR . "html/pages/layouts/footer.php" ?>

@@ -780,3 +780,102 @@
 .product-excerpt{
 	margin-bottom: 30px;
 }
+/* CONTACTS */
+
+.contacts{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.contacts .map{
+	width: 100%;
+	height: 600px;
+}
+
+.contacts-card{
+	width: 380px;
+	min-height: 560px;
+	height: auto;
+	background-color: var(--body-bg);
+	position: absolute;
+	margin-top: -580px;
+	right: 70px;
+	box-sizing: border-box;
+	padding: 25px 28px;
+}
+
+.contacts-data{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.contacts-data-item{
+	padding-left: 32px;
+	margin-bottom: 10px;
+	min-height: 28px;
+	line-height: 28px;
+	background-repeat: no-repeat;
+	background-image: var(--global-sprite);
+}
+
+.contacts-card form{
+	margin-top: 40px;
+}
+
+.contacts-card form .button{
+	margin-top: 15px;
+}
+
+.contacts-data-item.worktime{
+	margin-top: 33px;
+	font-size: 16px;
+	background-position: -48px -1429px;
+}
+
+.contacts-data-item.worktime strong{
+	margin-bottom: 10px;
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.contacts-data-item.location{
+	background-position: -48px -1310px;
+}
+
+.contacts-data-item.phone{
+	background-position: -48px -604px;
+}
+
+.contacts-data-item.email{
+	background-image: url('../imgs/email.png');
+	background-position: 1px 6px;
+}
+
+.contacts-data-item.facebook{
+	background-position: -48px -839px;
+}
+
+@media (max-width: 992px){
+	.contacts{
+		overflow: initial;
+	}
+
+	.contacts-card{
+		position: static;
+		margin-top: 20px;
+		width: 100%;
+		padding: 0;
+		padding-left: 5px;
+	}
+
+	.contacts .map{
+		height: 280px;
+	}
+
+	.contacts-card form .input{
+		max-width: 100%;
+	}
+}
