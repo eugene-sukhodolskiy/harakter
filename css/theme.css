@@ -23,6 +23,7 @@ body{
 	color: var(--txt-color);
 	font-family: var(--font-family);
 	overflow-x: hidden;
+	padding-bottom: 140px;
 }
 
 @media (min-width: 1440px){
@@ -498,10 +499,6 @@ h4.heading{
 	margin-bottom: 45px;
 	font-size: 16px;
 	line-height: 23px;
-}
-
-.article-single .article-content img{
-	max-width: 100%;
 }
 
 .article-single .article-content p{

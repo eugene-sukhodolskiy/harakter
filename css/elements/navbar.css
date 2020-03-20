@@ -115,7 +115,7 @@
 	}
 
 	.navbar{
-		height: 64px;
+		height: 85px;
 		position: relative;
 		z-index: 2;
 		overflow: hidden;
@@ -163,10 +163,6 @@
 		line-height: 25px;
 	}
 
-	/* TMP */
-	.search-bar{
-		display: none !important; 
-	}
 }
 
 @media (max-width: 768px){

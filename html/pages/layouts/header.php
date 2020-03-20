@@ -16,6 +16,7 @@
 	
 	<script src="<?= TH_URI ?>libs/jquery.min.js"></script>
 	<script src="<?= TH_URI ?>libs/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="<?= TH_URI ?>js/search.js"></script>
 	<script src="<?= TH_URI ?>js/app.js"></script>
 </head>
 <body>
@@ -23,3 +24,4 @@
 	<div class="popup-back"></div>
 	<? include TH_DIR . 'html/pages/popups/login.php' ?>
 	<? include TH_DIR . 'html/pages/popups/signup.php' ?>
+	<? include TH_DIR . 'html/pages/layouts/adaptive-search-bar.php' ?>

@@ -5,7 +5,7 @@
 	--txt-color: #fff;
 	--font-family: 'Open Sans';
 	--txt-alt-color-main: #64FB00;
-	--global-sprite: url('/imgs/css_sprites.png');
+	--global-sprite: url('../imgs/css_sprites.png');
 	--btn-color-main: #1C1D1F;
 	--btn-bg-main: #fff;
 	--btn-color-main-hover: #64FB00;

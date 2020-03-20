@@ -65,6 +65,9 @@ add_action('wp_ajax_th_signup', 'th_signup');
 add_action('wp_ajax_nopriv_th_login', 'th_login');
 add_action('wp_ajax_th_login', 'th_login');
 
+add_action('wp_ajax_th_ajax_search', 'th_ajax_search');
+add_action('wp_ajax_nopriv_th_ajax_search', 'th_ajax_search');
+
 function th_signup(){
 	// dd($_POST);
 	$email = $_POST['email'];
@@ -78,6 +81,7 @@ function th_signup(){
 
 		echo '{"signup": ' . $user_id . '}';
 	}
+	exit;
 }
 
 function th_login(){
@@ -97,6 +101,27 @@ function th_login(){
 	}else{
 		echo json_encode(["user" => $u]);
 	}
+	exit;
+}
+
+function th_ajax_search(){
+	$args = array(
+		's' => $_POST['term'],
+		'posts_per_page' => 5
+	);
+	$the_query = new WP_Query($args);
+	$posts = [];
+	while ($the_query->have_posts()) {
+		$the_query->the_post();
+		$posts[] = [
+			"title" => get_the_title(),
+			"link" => get_the_permalink(),
+			"excerpt" => get_the_excerpt()
+		];
+	}
+
+	echo json_encode($posts);
+	exit;
 }
 
 
