@@ -19,7 +19,7 @@
 	<script src="<?= TH_URI ?>js/search.js"></script>
 	<script src="<?= TH_URI ?>js/app.js"></script>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 	<div class="popup-back"></div>
 	<? include TH_DIR . 'html/pages/popups/login.php' ?>

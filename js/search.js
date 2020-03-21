@@ -51,7 +51,13 @@ class Search{
 			self.containers.adaptiveSearchBar.removeClass('active');
 		});
 
-		this.containers.searchInput.on('input', function(){
+		this.containers.searchInput.on('keydown, keypress', function(e){
+			if($(this).val().length > 2 && e.keyCode == 13){
+				document.location = "/?s=" + $(this).val();
+			}
+		});
+
+		this.containers.searchInput.on('input', function(e){
 			let searchQueryString = $.trim($(this).val());
 			if(searchQueryString.length < 2){
 				self.containers.searchResultContainer.hide();

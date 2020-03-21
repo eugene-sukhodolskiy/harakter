@@ -426,3 +426,64 @@ h4.heading{
 	font-weight: bold;
 	text-decoration: none;
 }
+
+/* SEARCH PAGE */
+
+body.search{
+	background-color: #fff;
+}
+
+body.search .footer{
+	display: none;
+}
+
+body.search .back-button{
+	color: var(--body-bg);
+	background-image: url('../imgs/arrow-left-dark.png');
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+}
+
+.page.search .section-heading{
+	color: var(--body-bg);
+	text-align: left;
+	font-weight: 800;
+}
+
+.page.search{
+	color: var(--body-bg);
+}
+
+.search-results-container{
+	
+}
+
+.page.search .count-results{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.search-result-item{
+	margin-bottom: 24px;
+	display: grid;
+	grid-template-columns: 90px auto;
+	grid-column-gap: 20px;
+}
+
+.search-result-item .post-thumbnail{
+	width: 95px;
+	height: 95px;
+	background-position: center center;
+	background-size: cover;
+}	
+
+.search-result-item .post-content{
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+.search-result-item .heading{
+	color: var(--body-bg);
+	margin-top: 0;
+	margin-bottom: 15px;
+}
