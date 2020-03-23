@@ -17,6 +17,7 @@
 	<script src="<?= TH_URI ?>libs/jquery.min.js"></script>
 	<script src="<?= TH_URI ?>libs/slick-1.8.1/slick/slick.min.js"></script>
 	<script src="<?= TH_URI ?>js/search.js"></script>
+	<script src="<?= TH_URI ?>js/video-player.js"></script>
 	<script src="<?= TH_URI ?>js/app.js"></script>
 </head>
 <body <?php body_class(); ?>>

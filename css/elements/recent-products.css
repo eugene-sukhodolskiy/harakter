@@ -38,3 +38,27 @@
 .product-excerpt{
 	margin-bottom: 30px;
 }
+
+@media (min-width: 1200px) and (max-width: 1440px){
+	.pd-card-wrap .button.main:hover, 
+	.pd-card-wrap .button.medium.main:hover, 
+	.pd-card-wrap .button.chevron:hover,
+	.pd-card-wrap .button.main, 
+	.pd-card-wrap .button.medium.main, 
+	.pd-card-wrap .button.chevron,
+	.pd-card-wrap .button.chevron.main{
+		background-position-x: 165px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+	.pd-card-wrap .button.main:hover, 
+	.pd-card-wrap .button.medium.main:hover, 
+	.pd-card-wrap .button.chevron:hover,
+	.pd-card-wrap .button.main, 
+	.pd-card-wrap .button.medium.main, 
+	.pd-card-wrap .button.chevron,
+	.pd-card-wrap .button.chevron.main{
+		background-position-x: 195px;
+	}
+}

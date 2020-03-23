@@ -4,6 +4,7 @@ $(document).ready(function(){
 	searchHandlers();
 	formHandlers();
 	adaptiveMenuHandlers();
+	new VideoPlayer();
 	partnersCarousel();
 	popupControl();
 	signupControl();
@@ -11,6 +12,7 @@ $(document).ready(function(){
 });
 
 let searchObject;
+let videoPlay;
 
 function searchHandlers(){
 	searchObject = new Search();

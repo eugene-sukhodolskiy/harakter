@@ -487,3 +487,49 @@ body.search .back-button{
 	margin-top: 0;
 	margin-bottom: 15px;
 }
+
+/* VIDEO PLAYER */
+
+.video-play-btn,
+.video-mute-btn{
+	width: 50px;
+	height: 50px;
+	border: 0;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	filter: brightness(1);
+	transition-property: filter;
+	transition-duration: .2s;
+}
+
+.video-play-btn:hover,
+.video-mute-btn:hover{
+	filter: brightness(2);
+}
+
+.video-play-btn.play{
+	background-image: url('../imgs/play-circle-outline.png');
+}
+
+.video-play-btn.pause{
+	background-image: url('../imgs/pause-circle-outline.png');
+}
+
+.video-mute-btn{
+	background-size: 60% auto;
+}
+
+.video-mute-btn.mute{
+	background-image: url('../imgs/volume-mute.png');
+}
+
+.video-mute-btn.unmute{
+	background-image: url('../imgs/volume-high.png');
+}
+
+.video-play-btn:focus,
+.video-mute-btn:focus{
+	outline: none;
+}

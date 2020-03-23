@@ -113,3 +113,9 @@
 .button.chevron.small:focus{
 	background-position-y: -373px;
 }
+
+@media (max-width: 360px){
+	.button.chevron.main{
+    background-position: 185px -366px;
+	}
+}
