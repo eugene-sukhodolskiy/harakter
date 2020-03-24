@@ -8,7 +8,7 @@
 	list-style: none;
 }
 
-.tag{
+li.tag{
 	display: inline-block;
 	margin-top: 6px;
 }
@@ -27,8 +27,8 @@
 	transition-property: background-color, color;
 }
 
-.tag.active .tag-link,
-.tag:hover .tag-link{
+li.tag.active .tag-link,
+li.tag:hover .tag-link{
 	color: var(--btn-color-main);
 	background-color: var(--txt-color);
 }

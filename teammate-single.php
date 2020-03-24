@@ -24,10 +24,17 @@
 								<? the_content() ?>
 							</div>
 							<div class="partner-links">
-								<a href="#" class="partner-link facebook" target="_blank"></a>
-								<a href="#" class="partner-link instagram" target="_blank"></a>
-								<a href="#" class="partner-link youtube" target="_blank"></a>
-								<a href="#" class="partner-link telegram" target="_blank"></a>
+								<?
+									$contacts = [];
+									list($contacts['facebook']) = get_post_meta(get_the_ID(), 'facebook');
+									list($contacts['instagram']) = get_post_meta(get_the_ID(), 'instagram');
+									list($contacts['youtube']) = get_post_meta(get_the_ID(), 'youtube');
+									list($contacts['telegram']) = get_post_meta(get_the_ID(), 'telegram');
+								?>
+								<? foreach($contacts as $contact_name => $contact_link): ?>
+									<? if(!strlen(trim($contact_link))) continue; ?>
+									<a href="<?= $contact_link ?>" class="partner-link <?= $contact_name ?>" target="_blank"></a>
+								<? endforeach ?>
 							</div>
 						</div>
 					</div>

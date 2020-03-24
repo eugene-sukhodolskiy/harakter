@@ -3,6 +3,9 @@
 	height: 100px;
 	line-height: 100px;
 	background-color: var(--body-bg);
+	position: fixed;
+	top: 0;
+	z-index: 100;
 }
 
 .navbar .logo{
@@ -116,8 +119,6 @@
 
 	.navbar{
 		height: 85px;
-		position: relative;
-		z-index: 2;
 		overflow: hidden;
 		transition-duration: .2s;
 		transition-property: height;
@@ -686,7 +687,7 @@
 	list-style: none;
 }
 
-.tag{
+li.tag{
 	display: inline-block;
 	margin-top: 6px;
 }
@@ -705,8 +706,8 @@
 	transition-property: background-color, color;
 }
 
-.tag.active .tag-link,
-.tag:hover .tag-link{
+li.tag.active .tag-link,
+li.tag:hover .tag-link{
 	color: var(--btn-color-main);
 	background-color: var(--txt-color);
 }
@@ -1079,12 +1080,10 @@
 	width: 100%;
 	margin-top: 100px;
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 }
 
-.footer-main{
-
-}
+.footer-main{}
 
 .fsidebar-list{
 	list-style-type: none;

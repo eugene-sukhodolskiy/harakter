@@ -23,7 +23,7 @@ body{
 	color: var(--txt-color);
 	font-family: var(--font-family);
 	overflow-x: hidden;
-	padding-bottom: 140px;
+	padding-top: 85px;
 }
 
 @media (min-width: 1440px){

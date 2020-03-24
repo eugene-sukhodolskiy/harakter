@@ -114,8 +114,23 @@
 	background-position-y: -373px;
 }
 
+@media (max-width: 420px){
+	.button.chevron.main{
+    background-position: 250px -366px;
+    max-width: 420px;
+	}
+}
+
 @media (max-width: 360px){
 	.button.chevron.main{
-    background-position: 185px -366px;
+    background-position: 225px -366px;
+    max-width: 360px;
+	}
+}
+
+@media (max-width: 320px){
+	.button.chevron.main{
+    background-position: 205px -366px;
+    max-width: 320px;
 	}
 }

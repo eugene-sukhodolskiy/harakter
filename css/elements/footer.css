@@ -2,12 +2,10 @@
 	width: 100%;
 	margin-top: 100px;
 	position: relative;
-	z-index: -1;
+	z-index: 0;
 }
 
-.footer-main{
-
-}
+.footer-main{}
 
 .fsidebar-list{
 	list-style-type: none;

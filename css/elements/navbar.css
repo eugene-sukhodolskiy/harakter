@@ -3,6 +3,9 @@
 	height: 100px;
 	line-height: 100px;
 	background-color: var(--body-bg);
+	position: fixed;
+	top: 0;
+	z-index: 100;
 }
 
 .navbar .logo{
@@ -116,8 +119,6 @@
 
 	.navbar{
 		height: 85px;
-		position: relative;
-		z-index: 2;
 		overflow: hidden;
 		transition-duration: .2s;
 		transition-property: height;

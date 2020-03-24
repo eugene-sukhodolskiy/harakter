@@ -17,4 +17,10 @@
 	</div>
 </div>
 
+<style>
+	.footer{
+		display: none;
+	}
+</style>
+
 <? include TH_DIR . "html/pages/layouts/footer.php" ?>

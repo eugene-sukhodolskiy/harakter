@@ -23,7 +23,7 @@ body{
 	color: var(--txt-color);
 	font-family: var(--font-family);
 	overflow-x: hidden;
-	padding-bottom: 140px;
+	padding-top: 85px;
 }
 
 @media (min-width: 1440px){
@@ -242,9 +242,24 @@ h4.heading{
 	background-position-y: -373px;
 }
 
+@media (max-width: 420px){
+	.button.chevron.main{
+    background-position: 250px -366px;
+    max-width: 420px;
+	}
+}
+
 @media (max-width: 360px){
 	.button.chevron.main{
-    background-position: 185px -366px;
+    background-position: 225px -366px;
+    max-width: 360px;
+	}
+}
+
+@media (max-width: 320px){
+	.button.chevron.main{
+    background-position: 205px -366px;
+    max-width: 320px;
 	}
 }
 .form-container{
@@ -323,6 +338,18 @@ h4.heading{
 
 .form-container .input:focus{
 	outline: none;
+}
+
+@media (max-width: 420px){
+	.form-container{
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.contacts-card form .button{
+		width: 100%;
+		max-width: 100%;
+	}
 }
 
 .latest-articles .articles{
