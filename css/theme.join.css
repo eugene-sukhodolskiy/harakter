@@ -18,6 +18,10 @@
 	--link-color: #64FB00;
 }
 
+#wpadminbar{
+	display: none;
+}
+
 body{
 	background: var(--body-bg);
 	color: var(--txt-color);
@@ -309,6 +313,15 @@ h4.heading{
 	margin-bottom: 45px;
 	font-size: 16px;
 	line-height: 23px;
+}
+
+.article-single .article-content a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.article-single .article-content a:hover{
+	text-decoration: underline;
 }
 
 .article-single .article-content p{

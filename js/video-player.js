@@ -54,17 +54,6 @@ class VideoPlayer{
 		video.controls = false;
 		video.loop = true;
 		$(video).css({'object-fit': 'cover'});
-		$(video).on('loadedmetadata', function(){
-			// let ratio = $(this).height() / this.videoHeight;
-			// let calcWidth = this.videoWidth / ratio;
-			// let offset = ($(this).width() - calcWidth) / 2;
-			// console.log(ratio, calcWidth, offset);
-			// $(this).css({
-			// 	'width': calcWidth,
-			// 	'height': $(this).height(),
-			// 	'margin-left': offset + 'px'
-			// });
-		});
 		video.play();
 	}
 }

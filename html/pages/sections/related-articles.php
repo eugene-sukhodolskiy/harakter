@@ -1,5 +1,5 @@
 <section class="site-section related-articles">
-	<h4 class="heading section-heading">Релевантные статьи</h4>
+	<h4 class="heading section-heading">Будет интересно</h4>
 	<div class="section-content">
 		<div class="row">
 			<? list($cat, $posts) = get_category_posts('articles-cat'); ?>
