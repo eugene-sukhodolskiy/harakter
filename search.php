@@ -24,7 +24,9 @@
 								<div style="background-image: url('<?= get_the_post_thumbnail_url(get_the_ID(), 'thumbnail') ?>');" class="post-thumbnail"></div>
 							<? endif ?>
 							<article class="post-content">
-								<h4 class="heading"><? the_title() ?></h4>
+								<h4 class="heading">
+									<a href="<?= get_permalink(get_the_ID()) ?>" class="link-to-search-result-page"><? the_title() ?></a>
+								</h4>
 								<p class="desc"><? the_excerpt() ?></p>
 							</article>
 						</div>

@@ -6,19 +6,10 @@
 	
 	<? wp_head() ?>
 
-	<link rel="stylesheet" type="text/css" href="<?= TH_URI ?>libs/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="<?= TH_URI ?>libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" type="text/css" href="<?= TH_URI ?>libs/slick-1.8.1/slick/slick.css">
-
-	<link rel="stylesheet" type="text/css" href="<?= TH_URI ?>css/theme.css">
-	<link rel="stylesheet" type="text/css" href="<?= TH_URI ?>css/elements.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
-	<script src="<?= TH_URI ?>libs/jquery.min.js"></script>
-	<script src="<?= TH_URI ?>libs/slick-1.8.1/slick/slick.min.js"></script>
-	<script src="<?= TH_URI ?>js/search.js"></script>
-	<script src="<?= TH_URI ?>js/video-player.js"></script>
-	<script src="<?= TH_URI ?>js/app.js"></script>
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+
 </head>
 <body <?php body_class(); ?>>
 
