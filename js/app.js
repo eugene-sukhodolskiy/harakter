@@ -140,3 +140,19 @@ function partnersCarousel(){
 		]
 	});
 }
+
+function shareCounterPlus(){
+	let postId = $(this).attr('data-post-id');
+	let data = {
+		'post_id': postId,
+		'action': 'th_share_counter_plus'
+	};
+
+	console.log(data);
+
+	$.post('/wp-admin/admin-ajax.php', data);
+	let cc = $($(this).attr('data-counter-container'));
+	let count = parseInt(cc.attr('data-counter')) + 1;
+	cc.attr('data-counter', count);
+	cc.html("(" + count + ")");
+}

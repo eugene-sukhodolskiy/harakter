@@ -90,6 +90,9 @@ add_action('wp_ajax_th_login', 'th_login');
 add_action('wp_ajax_th_ajax_search', 'th_ajax_search');
 add_action('wp_ajax_nopriv_th_ajax_search', 'th_ajax_search');
 
+add_action('wp_ajax_th_share_counter_plus', 'th_share_counter_plus');
+add_action('wp_ajax_nopriv_th_share_counter_plus', 'th_share_counter_plus');
+
 function th_signup(){
 	// dd($_POST);
 	$email = $_POST['email'];
@@ -146,3 +149,48 @@ function th_ajax_search(){
 	exit;
 }
 
+function th_share_counter_plus(){
+	$post_id = intval($_POST['post_id']);
+	
+	$shares = get_option('th_shares');
+	if(!$shares){
+		$shares = '[]';
+	}
+
+	$shares = json_decode($shares, true);
+
+	$search_flag = false;
+	foreach($shares as $i => $share){
+		if($share['pid'] == $post_id){
+			$shares[$i]['c'] += 1;
+			$search_flag = true;
+		}
+	}
+
+	if(!$search_flag){
+		$shares[] = ['pid' => $post_id, 'c' => 1];
+	}
+
+	$shares = json_encode($shares);
+	update_option('th_shares', $shares);
+
+	exit;
+}
+
+function get_share_counter($post_id){
+	$shares = get_option('th_shares');
+	// dd($shares);
+	if(!$shares){
+		$shares = '[]';
+	}
+
+	$shares = json_decode($shares, true);
+
+	foreach($shares as $i => $share){
+		if($share['pid'] == $post_id){
+			return $share['c'];
+		}
+	}
+
+	return 0;
+}
